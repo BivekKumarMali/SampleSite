@@ -1,0 +1,422 @@
+/* Basic selector of CSS */
+
+/* id #main {} */
+
+/* classes: .content {} 
+h1{
+    width: 250px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid green;
+    margin: 20px 10px 60px 40px;
+} */
+
+/* CSS positioning*/
+/*
+#parent_div {
+    width: 400px;
+    height: 400px;
+    background-color: darkgreen;
+    margin: 100px auto;
+    position: relative;
+    .fixed{
+        position: fixed;
+    }
+
+}
+h1{
+    font-family: "Source Sans pro" ;
+}
+
+#child_div {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+*/
+/* bootstrap Grid example */
+/*    Default Theme;
+ -------------------------
+Fonts Raleway & Open Sans
+ -------------------------
+Colors:
+Moon Yellow:       #f4c613
+Grey:              #212226
+White Smoke:       #f4f4f4
+White:             #fff
+Black:             #000
+---------------------------*/
+/* +++++++++++++++++++++++++++++
+            Html Body
+++++++++++++++++++++++++++++++++*/
+html , body{
+    height: 100%;
+}
+body{
+    color: #212226;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Raleway" , sans-serif;
+}
+p{
+    font-family: "Open Sans" , sans-serif;
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 24px;
+}
+section{
+    background-color: white;
+    overflow: hidden;
+}
+}
+/*    |     | Preloader |   |   */
+#preloader{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+#status{
+    background-image:url("../img/preloader/Blocks-1s-200px.gif");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -80px; 
+}
+/*==================================
+            home Section
+====================================*/ 
+#home{
+    background: none;
+    height: 100%;
+    
+}
+#home-bg-video{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);   transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url(../img/header/spiderman-geronimo.jpg);
+    background-size: cover;
+    
+}
+#home-overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#home-content{ 
+    width: 100%;
+    height: 100%;
+    display: table;  
+}
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    text-transform:uppercase;
+    margin: 0;
+    display: inline-block;
+}
+.font-weight{
+    font-weight: 100;
+}
+#home-heading h1 span {
+    color: #f4c613;
+    font-weight: 500;
+}
+#home-text p {
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+/*==================================
+            Button
+====================================*/ 
+.btn-general{
+    font-family: "Raleway" , sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all 0.5s;transition: all 0.5s;
+}
+.btn-home{
+    color: white;
+    border: 1px solid #fff;
+}
+.btn-home:hover, .btn-home:focus{
+    color: white;
+    background-color: #f4c613;
+    border: 1px solid #f4c612;
+}
+/*==================================
+            Arrow Down
+====================================*/
+#arrow-down{
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    color: white;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;  
+    margin-left: -16px;
+    z-index: 1;
+}
+#arrow-down:hover,
+#arrow-down:focus{
+    color:#f4c163;
+}
+/*==================================
+            Content Box
+====================================*/
+.content-box-lg{
+    padding: 120px 0;
+}
+.content-box-md{
+    padding: 100px 0;
+}
+/*==================================
+            Vertical Heading
+====================================*/
+.vertical-heading h5{
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -69px;    
+}
+.vertical-heading h2{
+    margin: 0 0 0 3px;
+    font-size: 42px;
+    line-height: 45px;
+}
+/*==================================
+            About 01
+====================================*/
+#about-right p:first-child{
+        margin-bottom: 30px;
+}
+#about-right{
+    margin-bottom: 60px;
+}
+#about-bottom img{
+    margin: 0 auto;
+}
+/*==================================
+            About 02
+====================================*/
+#about-02{
+    background-color: #f4f4f4;
+}
+.about-item{
+    background-color: white;
+    padding: 50px 30px;
+    box-shadow: 10px 10px 5px rgba(0,0,0 ,.1);
+}
+.about-item i{
+    font-size: 42px;
+    margin: 0;  
+}
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 45px;
+    height: 3px;
+    background-color:  #f4c613;
+    margin: 0 auto;
+    border: none;
+}
+.about-item p{
+    margin-top: 20px;   
+}
+.about-item:hover{
+    background-color: #f4c613;
+}
+.about-item:hover i, 
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    transition: all 0.4s ease-in-out;
+}
+/*==================================
+                Team
+====================================*/
+#team-left vertical-heading{
+    min-height: 160px;
+}
+.team-member{
+     margin: 8px;
+    position: relative;
+}
+.team-member-overlay {
+    background-color: rgba(33,34,38, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    opacity: 0;
+    
+}
+.team-member-info{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    
+}
+.team-member-info h6{
+    color: #f4c613;
+    font-size: 16px;
+    margin: 0;
+}
+.team-member-info p{
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+.team-member:hover .team-member-overlay {
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+/*==================================
+                Social Icon
+====================================*/
+ul.social-list{
+    padding: 0;
+    margin-top: 20px;
+}
+ul.social-list li{
+    display: inline-block;
+    padding: 0;
+}
+ul.social-list li a{
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px; 
+    color: white;
+    border-radius: 50%;
+}
+ul.social-list li:nth-child(1) a:hover{
+    color: gray;
+    background-color: transparent;
+    border-color: transparent;
+    -webkit-transition: all 0.5s;transition: all 0.5s;
+}
+ul.social-list li:nth-child(2) a:hover{
+    color: Black;
+    background-color: #e8b708;
+    border-color: transparent;
+    -webkit-transition: all 0.5s; transition: all 0.5s;
+}
+ul.social-list li:nth-child(3) a:hover{
+    color: Red;
+    background-color: black;
+    border-color: transparent;
+    -webkit-transition: all 0.5s;transition: all 0.5s;
+}
+.owl-prev {
+    color: grey !important;
+    background-color: none !important;
+    font-size: 45px !important;
+}
+.owl-next {
+    color: grey !important;
+    background-color: none !important;
+    font-size: 45px !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: none; !important;
+    border: none;
+}
+/*==========================================
+            genre: 
+==========================================*/
+.skill{
+    margin-bottom: 20px;
+}
+.skill h4{
+    line-height: 62px;
+    margin: 0p;
+    font-weight: normal;
+}
+.progress{
+    height: 25px;
+    border-radius: 0;
+    background-color: #efefef;
+    overflow: visible;
+}
+.progress-bar{
+    background-color: #f4c613;
+    position: relative;
+}
+.progress-bar span{
+    font-size: 13px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    background-color: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 90%;
+    top: -40px;
+}
+.progress-bar span:before{
+    content: "" ;
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+}
