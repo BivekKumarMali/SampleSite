@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Couple Game";
+}
+
+<h1>🎮 Local 2 Player Game</h1>
+
+<p><strong>Level:</strong> @ViewBag.Level</p>
+<p><strong>Points:</strong> @ViewBag.Points</p>
+<p><strong>Energy Meter:</strong> @ViewBag.Arousal</p>
+
+@if (TempData["Dice"] != null)
+{
+    <p>🎲 Dice Rolled: @TempData["Dice"]</p>
+    <p>+@TempData["Earned"] points</p>
+}
+
+<form method="get" action="/Game/Roll">
+    <button type="submit">Roll Dice 🎲</button>
+</form>
